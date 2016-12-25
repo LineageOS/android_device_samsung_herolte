@@ -1,0 +1,40 @@
+#
+# system.prop for hero2lte
+#
+
+ro.product.brand=samsung
+ro.product.device=heroltexx
+ro.product.board=universal8890
+ro.hardware=universal8890
+ro.arch=exynos8890
+ro.chipname=universal8890
+
+# Media
+ro.sf.lcd_density=640
+
+ro.kernel.qemu.gles=1
+persist.demo.hdmirotationlock=false
+
+# Radio
+rild.libpath=/system/lib64/libsec-ril.so
+rild.libargs=-d /dev/ttyS0
+ro.telephony.ril_class=heroRIL
+telephony.lteOnGsmDevice=1
+ro.telephony.default_network=9
+ro.use_data_netmgrd=false
+persist.data.netmgrd.qos.enable=false
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+
+#
+# HWC
+#
+debug.hwc.winupdate=1
+debug.hwc.otf=1
+
+ro.securestorage.support=false
+persist.sys.isUsbOtgEnabled=true
+# Default USB mode
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
