@@ -16,8 +16,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter heroltebmc, herolteskt, heroltektt, heroltelgt, heroltexx, $(TARGET_DEVICE)),)
+ifneq ($(filter herolte, $(TARGET_DEVICE)),)
 
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif

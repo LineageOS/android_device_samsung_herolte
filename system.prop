@@ -3,7 +3,7 @@
 #
 
 ro.product.brand=samsung
-ro.product.device=heroltexx
+ro.product.device=herolte
 ro.product.board=universal8890
 ro.hardware=universal8890
 ro.arch=exynos8890
@@ -37,4 +37,4 @@ persist.sys.isUsbOtgEnabled=true
 # Default USB mode
 persist.service.adb.enable=1                                                    
 persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=adb
