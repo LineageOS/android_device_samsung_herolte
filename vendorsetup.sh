@@ -1,2 +1,3 @@
-add_lunch_combo heroltexx-eng
-add_lunch_combo heroltexx-userdebug
+add_lunch_combo cm_herolte-eng
+add_lunch_combo cm_herolte-userdebug
+add_lunch_combo cm_herolte-user
