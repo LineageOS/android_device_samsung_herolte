@@ -17,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-DTS_NAMES := exynos8890-hero2lte_eur_open
+DTS_NAMES := exynos8890-herolte_eur_open
 
 DTS_FILES = $(wildcard $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm64/boot/dts/$(DTS_NAMES)*.dts)
 DTS_FILE = $(lastword $(subst /, ,$(1)))
