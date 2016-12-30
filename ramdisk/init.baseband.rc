@@ -69,17 +69,5 @@ service cpboot-daemon /system/bin/cbd -d -tss310 -bm -mm -P platform/155a0000.uf
     group radio cache inet misc audio sdcard_rw log sdcard_r shell
     seclabel u:r:cbd:s0
 
-on boot
-    chown bluetooth net_bt_stack /dev/ttySAC1
-    chmod 0660 /dev/ttySAC1
-    # permissions for bluetooth.
-    setprop ro.bt.bdaddr_path "/efs/bluetooth/bt_addr"
-    chown bluetooth net_bt_stack ro.bt.bdaddr_path
-    chown radio net_bt_stack /efs/bluetooth/bt_addr
-    chmod 0640 /efs/bluetooth/bt_addr
-    chmod 0660 /sys/class/rfkill/rfkill0/state
-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
-
 on property:ro.multisim.simslotcount=*
    write /sys/module/modem_ctrl_ss310ap/parameters/ds_detect ${ro.multisim.simslotcount}
