@@ -22,3 +22,9 @@ LOCAL_PATH := device/samsung/herolte
 # cpboot-daemon for modem
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ril/sbin/cbd:root/sbin/cbd
+
+###########################################################
+### OVERLAY
+###########################################################
+
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
