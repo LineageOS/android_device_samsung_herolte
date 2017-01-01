@@ -18,7 +18,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
 TARGET_KERNEL_CONFIG := exynos8890-herolte_defconfig
 
 # DT/Boot/Recovery Image
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/herolte/mkbootimg.mk
+TARGET_DTS_NAMES := exynos8890-herolte_eur_open
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
 # Partitions
