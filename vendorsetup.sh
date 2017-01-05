@@ -1,3 +1,3 @@
-add_lunch_combo lineage_herolte-eng
-add_lunch_combo lineage_herolte-userdebug
-add_lunch_combo lineage_herolte-user
+add_lunch_combo cm_herolte-eng
+add_lunch_combo cm_herolte-userdebug
+add_lunch_combo cm_herolte-user
