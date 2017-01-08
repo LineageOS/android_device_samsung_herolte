@@ -31,7 +31,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 27044851712
 BOARD_CACHEIMAGE_PARTITION_SIZE    := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_RECOVERY_FSTAB := device/samsung/universal8890/ramdisk/fstab.samsungexynos8890
+TARGET_RECOVERY_FSTAB := device/samsung/hero-common/ramdisk/fstab.samsungexynos8890
 
 # RIL
 BOARD_MODEM_TYPE := ss333
@@ -40,4 +40,4 @@ BOARD_MODEM_TYPE := ss333
 TARGET_OTA_ASSERT_DEVICE := heroltebmc,herolteskt,heroltektt,heroltelgt,heroltexx,herolte
 
 # Inherit common board flags
-include device/samsung/universal8890/BoardConfigCommon.mk
+include device/samsung/hero-common/BoardConfigCommon.mk

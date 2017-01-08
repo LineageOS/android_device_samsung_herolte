@@ -17,7 +17,7 @@
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/herolte/device_herolte.mk)
-$(call inherit-product, device/samsung/universal8890/device_universal8890.mk)
+$(call inherit-product, device/samsung/hero-common/hero-common.mk)
 
 # Inherit from the 64 bit configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
