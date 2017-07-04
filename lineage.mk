@@ -31,6 +31,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_herolte
 PRODUCT_DEVICE := herolte
+PRODUCT_MODEL := SM-G930F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
