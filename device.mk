@@ -16,6 +16,10 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    libbauthtzcommon_shim
+
 # Inherit from common
 $(call inherit-product, device/samsung/universal8890-common/device-common.mk)
 
