@@ -16,6 +16,10 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    libbauthtzcommon_shim
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     WifiOverlay
