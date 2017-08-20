@@ -31,6 +31,11 @@ TARGET_INIT_VENDOR_LIB :=  //$(DEVICE_PATH):libinit_herolte
 TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
 TARGET_KERNEL_CONFIG := exynos8890-herolte_defconfig
 
+# Shims
+TARGET_LD_SHIM_LIBS += \
+    /vendor/lib/libbauthserver.so|/vendor/lib/libbauthtzcommon_shim.so \
+    /vendor/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
