@@ -1,9 +1,6 @@
 # Files are from G930FXXU8ETI2 unless pinned
 # Vendor security patch level 2020-09-01
 
-# DRM
-lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
-
 # Fingerprint
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
