@@ -1,0 +1,3 @@
+ui_print("resizing /system");
+run_program("resize2fs", "/dev/block/platform/155a0000.ufs/by-name/SYSTEM");
+ui_print("done resizing /system");

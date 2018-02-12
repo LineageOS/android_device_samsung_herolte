@@ -20,3 +20,4 @@ LOCAL_PATH := device/samsung/herolte
 ###########################################################
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+EXTRA_BLOCK_OTA_SCRIPT += device/samsung/herolte/extend_system.edify
