@@ -18,6 +18,9 @@ include device/samsung/universal8890-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/herolte
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2020-04-20
 
