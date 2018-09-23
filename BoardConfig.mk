@@ -18,5 +18,8 @@ include device/samsung/universal8890-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/herolte
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2020-04-20
+
 # inherit from the proprietary version
 -include vendor/samsung/herolte/BoardConfigVendor.mk
