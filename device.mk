@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Inherit from common
 $(call inherit-product, device/samsung/universal8890-common/device-common.mk)
 
