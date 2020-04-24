@@ -16,6 +16,10 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # Inherit from common
 $(call inherit-product, device/samsung/universal8890-common/device-common.mk)
 
