@@ -36,7 +36,6 @@
 #include "init_universal8890.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
 
 void vendor_load_properties()
 {

@@ -23,5 +23,8 @@ cc_library_static {
         "system/core/base/include",
         "system/core/init",
     ],
+    shared_libs: [
+        "libbase",
+    ],
     whole_static_libs: ["libinit_helpers_universal8890"]
 }
