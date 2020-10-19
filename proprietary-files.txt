@@ -1,5 +1,5 @@
-# Files are from G930KKKU3ETG2 unless pinned
-# Vendor security patch level 2020-08-01
+# Files are from G930FXXU8ETI2 unless pinned
+# Vendor security patch level 2020-09-01
 
 # DRM
 lib/liboemcrypto.so
@@ -28,7 +28,6 @@ vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin
 vendor/app/mcRegistry/ffffffff00000000000000000000000f.tlbin
 vendor/app/mcRegistry/ffffffff000000000000000000000012.tlbin
 vendor/app/mcRegistry/ffffffff000000000000000000000013.tlbin
-vendor/app/mcRegistry/ffffffff000000000000000000000028.tlbin
 vendor/app/mcRegistry/ffffffff00000000000000000000002f.tlbin
 vendor/app/mcRegistry/ffffffff000000000000000000000038.tlbin
 vendor/app/mcRegistry/ffffffff000000000000000000000041.tlbin
