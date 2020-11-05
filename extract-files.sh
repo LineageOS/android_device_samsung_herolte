@@ -69,7 +69,7 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 # Replace protobuf with vndk29 compat libs for specified libs
-patchelf --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libMcClient.so
-patchelf --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib64/libMcClient.so
+"${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libMcClient.so
+"${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib64/libMcClient.so
 
 "${MY_DIR}/setup-makefiles.sh"
