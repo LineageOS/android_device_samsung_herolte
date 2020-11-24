@@ -2,7 +2,7 @@
 # Vendor security patch level 2020-09-01
 
 # DRM
-lib/liboemcrypto.so
+lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
 
 # Mobicore
 app/mcRegistry/00060308060501020000000000000000.tlbin
