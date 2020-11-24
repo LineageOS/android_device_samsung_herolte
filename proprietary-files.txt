@@ -1,5 +1,5 @@
-# Files are from G930FXXU8ETI2 unless pinned
-# Vendor security patch level 2020-09-01
+# Files are from G930KKKU3ETJ1 unless pinned
+# Vendor security patch level 2020-10-01
 
 # DRM
 lib/liboemcrypto.so:vendor/lib/liboemcrypto.so

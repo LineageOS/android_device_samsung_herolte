@@ -35,7 +35,7 @@ TARGET_KERNEL_CONFIG := exynos8890-herolte_defconfig
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2020-08-01
+VENDOR_SECURITY_PATCH := 2020-10-01
 
 # inherit from the proprietary version
 -include vendor/samsung/herolte/BoardConfigVendor.mk
