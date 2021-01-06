@@ -4,6 +4,27 @@
 # DRM
 lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
 
+# Fingerprint
+vendor/lib/libbauthserver.so
+vendor/lib/libbauthtzcommon.so
+vendor/lib/libegis_fp_normal_sensor_test.so
+vendor/lib/libsynaFpSensorTestNwd.so
+vendor/lib/libgf_in_system_lib.so
+vendor/lib64/libbauthserver.so
+vendor/lib64/libbauthtzcommon.so
+vendor/lib64/libegis_fp_normal_sensor_test.so
+vendor/lib64/libsynaFpSensorTestNwd.so
+vendor/lib64/libgf_in_system_lib.so
+
+# Gatekeeper
+vendor/lib/hw/gatekeeper.exynos8890.so:vendor/lib/hw/gatekeeper.universal8890.so
+vendor/lib64/hw/gatekeeper.exynos8890.so:vendor/lib64/hw/gatekeeper.universal8890.so
+
+# Keymaster
+vendor/lib64/libkeymaster_mdfpp.so
+vendor/lib64/libkeymaster_helper.so
+vendor/lib64/hw/keystore.mdfpp.so
+
 # Mobicore
 app/mcRegistry/00060308060501020000000000000000.tlbin
 app/mcRegistry/ffffffff000000000000000000000004.tlbin
