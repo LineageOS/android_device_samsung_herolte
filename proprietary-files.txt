@@ -23,6 +23,7 @@ vendor/lib64/hw/gatekeeper.exynos8890.so:vendor/lib64/hw/gatekeeper.universal889
 # Keymaster
 vendor/lib64/libkeymaster_mdfpp.so
 vendor/lib64/libkeymaster_helper.so
+vendor/lib64/libskeymaster.so
 vendor/lib64/hw/keystore.mdfpp.so
 
 # Mobicore
