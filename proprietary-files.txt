@@ -21,6 +21,7 @@ vendor/lib/hw/gatekeeper.exynos8890.so:vendor/lib/hw/gatekeeper.universal8890.so
 vendor/lib64/hw/gatekeeper.exynos8890.so:vendor/lib64/hw/gatekeeper.universal8890.so
 
 # Keymaster
+lib64/vendor.samsung.security.skeymaster@3.0.so:vendor/lib64/vendor.samsung.security.skeymaster@3.0.so
 vendor/lib64/libkeymaster_mdfpp.so
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster.so
