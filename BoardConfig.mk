@@ -46,4 +46,4 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 VENDOR_SECURITY_PATCH := 2020-08-01
 
 # inherit from the proprietary version
--include vendor/samsung/herolte/BoardConfigVendor.mk
+include vendor/samsung/herolte/BoardConfigVendor.mk
