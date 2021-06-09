@@ -42,8 +42,8 @@
         <stream type="camcorder">
         </stream>
         <stream type="voice_recognition">
-            <apply effect="ns_sa"/>
-            <apply effect="aec_sa"/>
+            <!--apply effect="ns_sa"/>
+            <apply effect="aec_sa"/-->
         </stream>
         <stream type="voice_communication">
             <apply effect="agc"/>
