@@ -208,6 +208,113 @@
 	</path>
 
 	<!-- CP Call Output -->
+	<!-- Default -->
+	<path name="incall_default-handset">
+		<ctl name="ASRC1IN2L Input" value="AIF2RX1" />
+		<ctl name="ISRC2INT3 Input" value="ASRC1IN2L" />
+		<ctl name="HPOUT3L Input 3 Volume" value="0" />
+		<ctl name="HPOUT3R Input 3 Volume" value="0" />
+		<ctl name="HPOUT3L Input 3" value="ISRC2INT3" />
+		<ctl name="HPOUT3R Input 3" value="ISRC2INT3" />
+		<ctl name="HPOUT3L Input 3 Volume" value="32" />
+		<ctl name="HPOUT3R Input 3 Volume" value="32" />
+		<ctl name="HPOUT3L Input 2" value="None" />
+		<ctl name="HPOUT3R Input 2" value="None" />
+		<!-- Call recording route -->
+		<ctl name="LHPF2 Input 1" value="ISRC2INT3" />
+		<ctl name="AIF1TX1 Input 2" value="LHPF2" />
+		<ctl name="AIF1TX2 Input 2" value="LHPF2" />
+		<!-- default volume -->
+		<ctl name="HPOUT3L Input 1 Volume" value="32" />
+		<ctl name="HPOUT3R Input 1 Volume" value="32" />
+		<ctl name="HPOUT3L Input 1" value="AIF1RX1" />
+		<ctl name="HPOUT3R Input 1" value="AIF1RX2" />
+		<ctl name="RCV Switch" value="1" />
+	</path>
+
+	<path name="incall_default-speaker">
+		<ctl name="Sample Rate 2" value="16kHz" />
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="DSP5 Rate" value="ASYNCCLK rate 2" />
+		<ctl name="ASRC1IN2L Input" value="AIF2RX1" />
+		<ctl name="ISRC2INT3 Input" value="ASRC1IN2L" />
+		<ctl name="LHPF4 Input 1" value="AIF1RX1" />
+		<ctl name="LHPF4 Input 3 Volume" value="0" />
+		<ctl name="LHPF4 Input 3" value="ISRC2INT3" />
+		<ctl name="LHPF4 Input 3 Volume" value="32" />
+		<ctl name="LHPF4 Input 2" value="None" />
+		<ctl name="ASRC2IN1L Input" value="LHPF4" />
+		<ctl name="ASRC2IN1R Input" value="LHPF4" />
+		<ctl name="DSP5L Input 1" value="ASRC2IN1L" />
+		<ctl name="DSP5L Input 2" value="ASRC2IN1R" />
+		<ctl name="AIF4TX1 Input 1" value="DSP5.1" />
+		<ctl name="AIF4TX2 Input 1" value="DSP5.1" />
+		<ctl name="DSP5 Aux 2" value="AIF4RX1" />
+		<ctl name="DSP5 Aux 3" value="AIF4RX2" />
+		<ctl name="VI SENSING Switch" value="1" />
+		<ctl name="SPK Switch" value="1" />
+		<!-- Call recording route -->
+		<ctl name="LHPF2 Input 1" value="ISRC2INT3" />
+		<ctl name="AIF1TX1 Input 2" value="LHPF2" />
+		<ctl name="AIF1TX2 Input 2" value="LHPF2" />
+		<!-- default volume -->
+		<ctl name="DSP5L Input 1 Volume" value="26" />
+		<ctl name="DSP5L Input 2 Volume" value="26" />
+		<ctl name="AIF4TX1 Input 1 Volume" value="32" />
+		<ctl name="AIF4TX2 Input 1 Volume" value="32" />
+	</path>
+
+	<path name="incall_default-headset">
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 1" />
+		<ctl name="HPOUT1L Input 1" value="AIF1RX1" />
+		<ctl name="HPOUT1R Input 1" value="AIF1RX2" />
+		<ctl name="ASRC1IN2L Input" value="AIF2RX1" />
+		<ctl name="ASRC1IN2R Input" value="AIF2RX1" />
+		<ctl name="HPOUT1L Input 2" value="ASRC1IN2L" />
+		<ctl name="HPOUT1R Input 2" value="ASRC1IN2L" />
+		<ctl name="HP Switch" value="1" />
+		<!-- Call recording route -->
+		<ctl name="LHPF2 Input 1" value="ASRC1IN2L" />
+		<ctl name="AIF1TX1 Input 2" value="LHPF2" />
+		<ctl name="AIF1TX2 Input 2" value="LHPF2" />
+		<!-- default volume -->
+		<ctl name="Noise Gate Switch" value="0" />
+		<ctl name="HPOUT1L Impedance Volume" value="113" />
+		<ctl name="HPOUT1R Impedance Volume" value="113" />
+		<ctl name="HPOUT1L Input 1 Volume" value="32" />
+		<ctl name="HPOUT1R Input 1 Volume" value="32" />
+	</path>
+
+	<path name="incall_default-headphone">
+		<path name="incall_default-headset" />
+	</path>
+
+	<path name="incall_default-bt-sco-headset">
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 1" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="AIF3TX1 Input 1" value="ISRC2DEC3" />
+		<ctl name="AIF3TX2 Input 1" value="ISRC2DEC4" />
+		<ctl name="AIF3TX1 Input 2" value="ISRC2DEC1" />
+		<ctl name="AIF3TX2 Input 2" value="ISRC2DEC2" />
+		<ctl name="ISRC2DEC1 Input" value="ASRC1IN2L" />
+		<ctl name="ISRC2DEC2 Input" value="ASRC1IN2R" />
+		<ctl name="ISRC2DEC3 Input" value="AIF1RX1" />
+		<ctl name="ISRC2DEC4 Input" value="AIF1RX2" />
+		<ctl name="ASRC1IN2L Input" value="AIF2RX1" />
+		<ctl name="ASRC1IN2R Input" value="AIF2RX2" />
+		<ctl name="AIF3TX1 Input 1 Volume" value="32" />
+		<ctl name="AIF3TX2 Input 1 Volume" value="32" />
+		<ctl name="AIF3TX1 Input 2 Volume" value="32" />
+		<ctl name="AIF3TX2 Input 2 Volume" value="32" />
+		<!-- Call recording route -->
+		<ctl name="LHPF2 Input 1" value="ASRC1IN2L" />
+		<ctl name="AIF1TX1 Input 2" value="LHPF2" />
+		<ctl name="AIF1TX2 Input 2" value="LHPF2" />
+	</path>
+
 	<!-- NB -->
 	<path name="incall_nb-handset">
 		<path name="mute-speaker" />
@@ -427,6 +534,81 @@
 	</path>
 
 	<!-- CP Call input -->
+	<!-- call default input -->
+	<path name="incall_default-handset-mic">
+		<path name="main-mic" />
+		<ctl name="Sample Rate 2" value="16kHz" />
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="ISRC2DEC1 Input" value="IN1R" />
+		<ctl name="ASRC1IN1L Input" value="ISRC2DEC1" />
+		<ctl name="ASRC1IN1R Input" value="ISRC2DEC1" />
+		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF2TX2 Input 1" value="ASRC1IN1R" />
+		<!-- Call recording route -->
+		<ctl name="LHPF1 Input 1" value="IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
+	<path name="incall_default-speaker-mic">
+		<path name="2nd-mic" />
+		<ctl name="Sample Rate 2" value="16kHz" />
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="ISRC2DEC3 Input" value="IN3L" />
+		<ctl name="IN3L Digital Volume" value="0" />
+		<ctl name="ASRC1IN1L Input" value="ISRC2DEC3" />
+		<ctl name="ASRC1IN1R Input" value="ISRC2DEC3" />
+		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF2TX2 Input 1" value="ASRC1IN1R" />
+		<!-- Call recording route -->
+		<ctl name="LHPF1 Input 1" value="IN3L" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
+	<path name="incall_default-headset-mic">
+		<ctl name="Headset Mic Switch" value="1" />
+		<ctl name="ASRC1IN1L Input" value="IN2L" />
+		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF2TX2 Input 1" value="ASRC1IN1L" />
+		<!-- Call recording route -->
+		<ctl name="LHPF1 Input 1" value="IN2L" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
+	<path name="incall_default-headphone-mic">
+		<path name="main-mic" />
+		<ctl name="ASRC1IN1L Input" value="LHPF1" />
+		<ctl name="ASRC1IN1R Input" value="LHPF1" />
+		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF2TX2 Input 1" value="ASRC1IN1R" />
+		<!-- Call recording route -->
+		<ctl name="LHPF1 Input 1" value="IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
+	<path name="incall_default-bt-sco-headset-in">
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 1" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="ISRC2INT1 Input" value="AIF3RX1" />
+		<ctl name="ISRC2INT2 Input" value="AIF3RX2" />
+		<ctl name="ASRC1IN1L Input" value="ISRC2INT1" />
+		<ctl name="ASRC1IN1R Input" value="ISRC2INT2" />
+		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF2TX2 Input 1" value="ASRC1IN1R" />
+		<!-- Call recording route -->
+		<ctl name="LHPF1 Input 1" value="ISRC2INT1" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
 	<!-- NB -->
 	<path name="incall_nb-handset-mic">
 		<ctl name="Headset Mic Switch" value="0" />
@@ -656,6 +838,26 @@
 		<ctl name="AIF3TX2 Input 1 Volume" value="32" />
 	</path>
 
+	<!-- CP Call Output -->
+	<!-- default volume -->
+	<path name="gain-incall_default-handset">
+	</path>
+
+	<path name="gain-incall_default-speaker">
+	</path>
+
+	<path name="gain-incall_default-headset">
+	</path>
+
+	<path name="gain-incall_default-headphone">
+	</path>
+
+	<path name="gain-incall_default-bt-sco-headset">
+	</path>
+
+	<path name="gain-incall_default-bt-ble-headset">
+	</path>
+
 	<!-- NB volume -->
 	<path name="gain-incall_nb-handset">
 		<ctl name="HPOUT3L Input 1 Volume" value="32" />
@@ -790,6 +992,37 @@
 	</path>
 
 	<!-- CP Call Input volume -->
+	<!-- call default volume -->
+	<path name="gain-incall_default-handset-mic">
+		<ctl name="IN1R Digital Volume" value="128" />
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_default-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="0" />
+	</path>
+
+	<path name="gain-incall_default-headset-mic">
+		<ctl name="IN2L Volume" value="27" />
+		<ctl name="IN2L Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_default-headphone-mic">
+		<ctl name="IN1R Digital Volume" value="128" />
+	</path>
+
+	<path name="gain-incall_default-bt-sco-headset-in">
+		<ctl name="AIF2TX1 Input 1 Volume" value="32" />
+		<ctl name="AIF2TX2 Input 1 Volume" value="32" />
+		<ctl name="AIF1TX1 Input 1 Volume" value="32" />
+		<ctl name="AIF1TX2 Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-incall_default-bt-ble-headset-in">
+		<ctl name="IN1R Digital Volume" value="140" />
+		<ctl name="LHPF1 Input 1 Volume" value="32" />
+	</path>
+
 	<!-- NB volume -->
 	<path name="gain-incall_nb-handset-mic">
 		<ctl name="IN1R Digital Volume" value="128" />
@@ -890,8 +1123,8 @@
 	</path>
 
 	<path name="voice-earpiece">
-		<path name="incall_nb-handset"/>
-		<path name="gain-incall_nb-handset"/>
+		<path name="incall_default-handset"/>
+		<path name="gain-incall_default-handset"/>
 	</path>
 
 	<path name="voice-earpiece-wb">
@@ -900,8 +1133,8 @@
 	</path>
 
 	<path name="voice-speaker">
-		<path name="incall_nb-speaker"/>
-		<path name="gain-incall_nb-speaker"/>
+		<path name="incall_default-speaker"/>
+		<path name="gain-incall_default-speaker"/>
 	</path>
 
 	<path name="voice-speaker-wb">
@@ -920,8 +1153,8 @@
 	</path>
 
 	<path name="voice-bt-sco-headset">
-		<path name="incall_nb-bt-sco-headset"/>
-		<path name="gain-incall_nb-bt-sco-headset"/>
+		<path name="incall_default-bt-sco-headset"/>
+		<path name="gain-incall_default-bt-sco-headset"/>
 	</path>
 
 	<path name="voice-bt-sco-headset-wb">
@@ -951,13 +1184,13 @@
     </path>
 
 	<path name="voice-mic">
-		<path name="incall_nb-speaker-mic"/>
-		<path name="gain-incall_nb-speaker-mic"/>
+		<path name="incall_default-speaker-mic"/>
+		<path name="gain-incall_default-speaker-mic"/>
 	</path>
 
 	<path name="voice-earpiece-mic">
-		<path name="incall_nb-handset-mic"/>
-		<path name="gain-incall_nb-handset-mic"/>
+		<path name="incall_default-handset-mic"/>
+		<path name="gain-incall_default-handset-mic"/>
 	</path>
 
 	<path name="voice-earpiece-mic-wb">
@@ -966,8 +1199,8 @@
 	</path>
 
 	<path name="voice-speaker-mic">
-		<path name="incall_nb-speaker-mic"/>
-		<path name="gain-incall_nb-speaker-mic"/>
+		<path name="incall_default-speaker-mic"/>
+		<path name="gain-incall_default-speaker-mic"/>
 	</path>
 
 	<path name="voice-speaker-mic-wb">
@@ -976,8 +1209,8 @@
 	</path>
 
 	<path name="voice-headset-mic">
-		<path name="incall_nb-headset-mic"/>
-		<path name="gain-incall_nb-headset-mic"/>
+		<path name="incall_default-headset-mic"/>
+		<path name="gain-incall_default-headset-mic"/>
 	</path>
 
 	<path name="voice-headset-mic-wb">
@@ -991,8 +1224,8 @@
 	</path>
 
 	<path name="voice-bt-sco-mic-wb">
-		<path name="incall_wb-bt-sco-headset-in"/>
-		<path name="gain-incall_wb-bt-sco-headset-in"/>
+		<path name="incall_default-bt-sco-headset-in"/>
+		<path name="gain-incall_default-bt-sco-headset-in"/>
 	</path>
 
 	<path name="bt-sco-mic">
