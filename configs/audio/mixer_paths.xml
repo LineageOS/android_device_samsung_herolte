@@ -182,6 +182,13 @@
 		<ctl name="AIF1TX2 Input 2" value="LHPF2" />
 	</path>
 
+	<path name="incall-normal-rec-uplink">
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX1 Input 2" value="None" />
+		<ctl name="AIF1TX2 Input 2" value="None" />
+	</path>
+
 	<path name="incall-rec-uplink-and-downlink">
 		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
 		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
