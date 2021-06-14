@@ -189,6 +189,14 @@
 		<ctl name="AIF1TX2 Input 2" value="LHPF2" />
 	</path>
 
+	<path name="incall-normal-rec-uplink">
+		<ctl name="LHPF1 Input 1" value="IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX1 Input 2" value="None" />
+		<ctl name="AIF1TX2 Input 2" value="None" />
+	</path>
+
 	<path name="mute-speaker">
 		<ctl name="DSP5L Input 1 Volume" value="0" />
 		<ctl name="DSP5L Input 2 Volume" value="0" />
