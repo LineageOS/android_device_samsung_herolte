@@ -441,6 +441,24 @@
 	</path>
 
 	<!-- CP Call input -->
+	<!-- call default input -->
+	<path name="incall_default-handset-mic">
+		<path name="main-mic" />
+		<ctl name="Sample Rate 2" value="16kHz" />
+		<ctl name="ASRC1 Rate 1" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="ISRC2DEC1 Input" value="IN1R" />
+		<ctl name="ASRC1IN1L Input" value="ISRC2DEC1" />
+		<ctl name="ASRC1IN1R Input" value="ISRC2DEC1" />
+		<ctl name="AIF2TX1 Input 1" value="ASRC1IN1L" />
+		<ctl name="AIF2TX2 Input 1" value="ASRC1IN1R" />
+		<!-- Call recording route -->
+		<ctl name="LHPF1 Input 1" value="IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
 	<!-- NB -->
 	<path name="incall_nb-handset-mic">
 		<ctl name="Headset Mic Switch" value="0" />
@@ -824,6 +842,12 @@
 	</path>
 
 	<!-- CP Call Input volume -->
+	<!-- call default volume -->
+	<path name="gain-incall_default-handset-mic">
+		<ctl name="IN1R Digital Volume" value="128" />
+		<ctl name="IN3L Digital Volume" value="128" />
+	</path>
+
 	<!-- NB volume -->
 	<path name="gain-incall_nb-handset-mic">
 		<ctl name="IN1R Digital Volume" value="128" />
@@ -983,8 +1007,8 @@
     </path>
 
 	<path name="voice-mic">
-		<path name="incall_nb-speaker-mic"/>
-		<path name="gain-incall_nb-speaker-mic"/>
+		<path name="incall_default-handset-mic"/>
+		<path name="gain-incall_default-handset-mic"/>
 	</path>
 
 	<path name="voice-earpiece-mic">
