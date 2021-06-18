@@ -128,6 +128,11 @@
 		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
 	</path>
 
+	<path name="capture_channel_right">
+		<ctl name="AIF1TX1 Input 1" value="LHPF2" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF2" />
+	</path>
+
 	<path name="capture_channel_invert">
 		<ctl name="AIF1TX1 Input 1" value="LHPF2" />
 		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
@@ -468,6 +473,20 @@
 		<ctl name="LHPF1 Input 1" value="IN2L" />
 		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
 		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
+	</path>
+
+	<!-- communication input -->
+	<path name="communication-handset-mic">
+		<path name="media-mic" />
+	</path>
+
+	<path name="communication-speaker-mic">
+		<path name="capture_channel_right" />
+		<path name="2nd-mic" />
+	</path>
+
+	<path name="communication-headset-mic">
+		<path name="media-headset-mic" />
 	</path>
 
 	<!-- CP Call input -->
@@ -875,6 +894,23 @@
 		<param name="DSP6 ZM 24:0" value="0 0 128 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 176 0 0 5 128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0" />
 	</path>
 
+	<!-- communication input volume -->
+	<path name="gain-communication-handset-mic">
+		<ctl name="IN1R Digital Volume" value="140" />
+		<ctl name="LHPF1 Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-communication-speaker-mic">
+		<ctl name="IN3L Digital Volume" value="140" />
+		<ctl name="LHPF2 Input 1 Volume" value="32" />
+	</path>
+
+	<path name="gain-communication-headset-mic">
+		<ctl name="IN2L Volume" value="32" />
+		<ctl name="IN2L Digital Volume" value="140" />
+		<ctl name="LHPF1 Input 1 Volume" value="32" />
+	</path>
+
 	<!-- CP Call Input volume -->
 	<!-- call default volume -->
 	<path name="gain-incall_default-handset-mic">
@@ -1026,18 +1062,18 @@
 
 	<!-- Input -->
 	<path name="earpiece-mic">
-		<path name="media-mic"/>
-		<path name="gain-media-mic"/>
+		<path name="communication-handset-mic"/>
+		<path name="gain-communication-handset-mic"/>
 	</path>
 
 	<path name="speaker-mic">
-		<path name="media-mic"/>
-		<path name="gain-media-mic"/>
+		<path name="communication-speaker-mic"/>
+		<path name="gain-communication-speaker-mic"/>
 	</path>
 
     <path name="headset-mic">
-		<path name="media-headset-mic"/>
-		<path name="gain-media-headset-mic"/>
+		<path name="communication-headset-mic"/>
+		<path name="gain-communication-headset-mic"/>
     </path>
 
 	<path name="voice-mic">
