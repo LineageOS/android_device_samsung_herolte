@@ -431,13 +431,43 @@
 		<ctl name="AIF1TX2 Input 1" value="ISRC2INT2" />
 	</path>
 
-	<!-- voice input -->
-	<path name="recording-mic">
-		<path name="media-mic" />
+	<!-- voice_control_with_okgoogle input -->
+	<path name="voice_control_with_okgoogle-mic">
+		<ctl name="Sample Rate 2" value="16kHz" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="IN1R Rate" value="SYNCCLK rate 2" />
+		<ctl name="DSP6 Rate" value="SYNCCLK rate 2" />
+		<ctl name="VoiceControl Mode" value="Normal" />
+		<ctl name="DSP6 Firmware" value="VOICECONTROL" />
+		<ctl name="IN1 OSR" value="1.536MHz" />
+		<ctl name="ISRC2DEC1 Input" value="IN1R" />
+		<ctl name="DSP6 Aux 1" value="ISRC2DEC1" />
+		<ctl name="DSP Virtual Output Mux" value="DSP6" />
+		<ctl name="Main Mic Switch" value="1" />
+		<!--recording route -->
+		<ctl name="LHPF1 Input 1" value="IN1R" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
 	</path>
 
-	<path name="recording-headset-mic">
-		<path name="media-headset-mic" />
+	<!-- voice_control_with_okgoogle input headset -->
+	<path name="voice_control_with_okgoogle-headset-mic">
+		<ctl name="Sample Rate 2" value="16kHz" />
+		<ctl name="ISRC2 FSL" value="SYNCCLK rate 2" />
+		<ctl name="ISRC2 FSH" value="SYNCCLK rate 1" />
+		<ctl name="DSP6 Rate" value="SYNCCLK rate 2" />
+		<ctl name="VoiceControl Mode" value="Normal" />
+		<ctl name="DSP6 Rate" value="SYNCCLK rate 2" />
+		<ctl name="DSP6 Firmware" value="VOICECONTROL" />
+		<ctl name="ISRC2DEC1 Input" value="IN2L" />
+		<ctl name="DSP6 Aux 1" value="ISRC2DEC1" />
+		<ctl name="DSP Virtual Output Mux" value="DSP6" />
+		<ctl name="Headset Mic Switch" value="1" />
+		<!--recording route -->
+		<ctl name="LHPF1 Input 1" value="IN2L" />
+		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
 	</path>
 
 	<!-- CP Call input -->
@@ -829,16 +859,20 @@
 		<ctl name="LHPF2 Input 1 Volume" value="32" />
 	</path>
 
-	<!-- voice recording input volume -->
-	<path name="gain-recording-mic">
-		<ctl name="IN1R Digital Volume" value="128" />
-		<ctl name="LHPF1 Input 1 Volume" value="32" />
+	<!-- voice_control_with_okgoogle input volume -->
+	<path name="gain-voice_control_with_okgoogle-mic">
+		<ctl name="IN1R Digital Volume" value="150" />
+		<param name="DSP6 ZM 9000d:0" value="0 112 0 0 0 0 0 16 0 0 0 1" />
+		<param name="DSP6 ZM 24:0" value="0 0 128 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 176 0 0 5 128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0" />
 	</path>
 
-	<path name="gain-recording-headset-mic">
+	<!-- voice_control_with_okgoogle input volume -->
+	<path name="gain-voice_control_with_okgoogle-headset-mic">
 		<ctl name="IN2L Volume" value="30" />
-		<ctl name="IN2L Digital Volume" value="101" />
+		<ctl name="IN2L Digital Volume" value="147" />
 		<ctl name="LHPF1 Input 1 Volume" value="32" />
+		<param name="DSP6 ZM 9000d:0" value="0 112 0 0 0 0 0 16 0 0 0 1" />
+		<param name="DSP6 ZM 24:0" value="0 0 128 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 176 0 0 5 128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 0 0" />
 	</path>
 
 	<!-- CP Call Input volume -->
@@ -1064,12 +1098,12 @@
 	</path>
 
 	<path name="voice-rec-mic">
-		<path name="recording-mic"/>
-		<path name="gain-recording-mic"/>
+		<path name="voice_control_with_okgoogle-mic"/>
+		<path name="gain-voice_control_with_okgoogle-mic"/>
 	</path>
 
 	<path name="voice-rec-headset-mic">
-		<path name="recording-headset-mic"/>
-		<path name="gain-recording-headset-mic"/>
+		<path name="voice_control_with_okgoogle-headset-mic"/>
+		<path name="gain-voice_control_with_okgoogle-headset-mic"/>
 	</path>
 </mixer>
