@@ -20,7 +20,7 @@ cc_library_static {
     srcs: ["init_herolte.cpp"],
     include_dirs: [
         "device/samsung/universal8890-common/init",
-        "system/core/base/include",
+        "system/libbase/include",
         "system/core/init",
     ],
     shared_libs: [
